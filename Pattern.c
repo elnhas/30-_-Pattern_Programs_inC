@@ -731,6 +731,7 @@ Hollow Inverted Half Pyramid Pattern using numbers
 
 void pattern_num_hollow_full_pyramid (void)
 {
+
 /**
 Hollow Full Pyramid Pattern using numbers
 
@@ -765,3 +766,173 @@ Hollow Full Pyramid Pattern using numbers
         printf ("\n");
     }
 }
+
+void palindrome_num_half_pyramid (void)
+{
+/**
+Palindrome half pyramid pattern using numbers
+
+1
+1 2 1
+1 2 3 2 1
+1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
+
+**/
+    int prmd_n, row_count, col_count ;
+    printf ("Please enter the \" Palindrome half pyramid pattern using numbers\" n : ");
+    scanf ("%i",&prmd_n);
+
+    for (row_count = 1 ; row_count <= prmd_n ; row_count++)
+    {
+        for(col_count = 1 ; col_count <= row_count ; col_count++)
+        {
+            if ((col_count == row_count) && (row_count > 1) )
+            {
+                for (col_count = row_count ; col_count >=1 ; col_count--)
+                {
+                    printf("%i ",col_count);
+                }
+                break;
+            }
+            else
+            {
+                printf("%i ",col_count);
+
+            }
+
+        }
+        printf ("\n");
+    }
+}
+
+void palindrome_alphabet_half_pyramid (void)
+{
+/**
+Palindrome half pyramid pattern using alphabets , The ASCII code for uppercase from (A to Z) is (65 to 90)
+
+A
+A B A
+A B C B A
+A B C D C B A
+A B C D E D C B A
+
+**/
+    int prmd_n , row_count , col_count ;
+    printf ("Please enter the \" Palindrome half pyramid pattern using alphabets\"\n");
+
+    printf ("\nThe maximum number is \"26\" : ");           // Because above this row there is another symbols will appear , try it :)
+    scanf ("%i",&prmd_n);
+
+    for (row_count = 0 ; row_count < prmd_n ; row_count++)
+    {
+        for(col_count = 65 ; col_count <= (65 + row_count ) ; col_count++)
+        {
+            if ((col_count == (65 + row_count)) && (row_count > 0) )
+            {
+                for (col_count = (65 + row_count); col_count >= 65 ; col_count--)
+                {
+                    printf("%c ",col_count);
+                }
+                break;
+            }
+            else
+            {
+                printf("%c ",col_count);
+
+            }
+
+        }
+        printf ("\n");
+    }
+}
+
+void palindrome_num_full_pyramid (void)
+{
+/**
+Palindrome full pyramid pattern using numbers
+
+        1
+      1 2 1
+    1 2 3 2 1
+  1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
+
+**/
+     int prmd_n, row_count, col_count ;
+    printf ("Please enter the \" Palindrome full pyramid pattern using numbers\" n : ");
+    scanf ("%i",&prmd_n);
+
+    for (row_count = 1 ; row_count <= prmd_n ; row_count++)
+    {
+        for (col_count = (prmd_n - (row_count-1)) ; col_count >= 1 ; col_count--)
+        {
+            printf("  ");
+        }
+
+        for(col_count = 1 ; col_count <= row_count ; col_count++)
+        {
+            if ((col_count == row_count) && (row_count > 1) )
+            {
+                for (col_count = row_count ; col_count >=1 ; col_count--)
+                {
+                    printf("%i ",col_count);
+                }
+                break;
+            }
+            else
+            {
+                printf("%i ",col_count);
+
+            }
+
+        }
+        printf ("\n");
+    }
+
+}
+
+void palindrome_star_num_full_pyramid (void)
+{
+/**
+Palindrome pyramid pattern using numbers and stars
+
+*******1********
+
+******2*2*******
+
+*****3*3*3******
+
+****4*4*4*4*****
+
+***5*5*5*5*5****
+
+**6*6*6*6*6*6***
+
+**/
+     int prmd_n, row_count, col_count ;
+    printf ("Please enter the \" Palindrome pyramid pattern using numbers and stars\" n : ");
+    scanf ("%i",&prmd_n);
+
+    for (row_count = 1 ; row_count <= prmd_n ; row_count++)
+    {
+        for (col_count = ((prmd_n-row_count) + 1) ; col_count >= 0 ; col_count--)
+        {
+            printf("*");
+        }
+
+        for(col_count = 1 ; col_count <= row_count ; col_count++)
+        {
+            printf ("%i*",row_count);
+        }
+        for (col_count = ((prmd_n-row_count) + 1) ; col_count >= 1 ; col_count--)
+        {
+            printf("*");
+        }
+        printf ("\n");
+    }
+}
+
+
+
+

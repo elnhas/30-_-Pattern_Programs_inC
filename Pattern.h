@@ -29,5 +29,9 @@ void pattern_num_full_pyramid         (void);
 void pattern_num_hollow_half_pyramid  (void);
 void Pattern_num_hollow_inverted_half_pyramid (void);
 void pattern_num_hollow_full_pyramid  (void);
+void palindrome_num_half_pyramid      (void);
+void palindrome_num_full_pyramid      (void);
+void palindrome_star_num_full_pyramid (void);
+
 
 
