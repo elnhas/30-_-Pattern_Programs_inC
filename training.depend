@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1689945790 source:c:\users\moham\desktop\training\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pattern.h"
+
+1689945832 source:c:\users\moham\desktop\training\pattern.c
+	"Pattern.h"
+
+1689945064 c:\users\moham\desktop\training\pattern.h
+
+1689945790 source:c:\users\moham\desktop\patterns\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pattern.h"
+
+1689945064 c:\users\moham\desktop\patterns\pattern.h
+
+1689945832 source:c:\users\moham\desktop\patterns\pattern.c
+	"Pattern.h"
+
