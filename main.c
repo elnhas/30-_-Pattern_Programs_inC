@@ -16,7 +16,7 @@
 
 int main()
 {
-
+    pattern_num_hollow_full_pyramid();
     return 0 ;
 }
 
