@@ -1,4 +1,11 @@
-
+/**
+***************************************************************************
+*  @project   : 30+_Pattern_Programs_inC
+*  @pattern.c : The file which have the main function
+*  @author    : Mohamed Hussein Elnahas
+*  @brief     : This file have the declaration of functions
+****************************************************************************
+**/
 
 void pattern_solid_rectangular_star   (void);
 void pattern_hollow_rectangle_star    (void);

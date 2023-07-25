@@ -1,3 +1,11 @@
+/**
+***************************************************************************
+*  @project   : 30+_Pattern_Programs_inC
+*  @pattern.c : The file which have the main function
+*  @author    : Mohamed Hussein Elnahas
+*  @brief     : This file have the original definition of functions
+****************************************************************************
+**/
 
 
 #include "Pattern.h"
@@ -528,36 +536,3 @@ void pattern_num_hollow_full_pyramid (void)
         printf ("\n");
     }
 }
-/**
-
-      1
-    1 2
-  1   3
-1 2 3 4
-
-------------1
-----------2 3 2
---------3 4 5 4 3
------4 5 6 7 6 5 4
----5 6 7 8 9 8 7 6 5
-6 7 8 9 10 11 10 9 8 7 6
-
-
-
-27
-24
-22
-18
-15
-12
-9
-6
-3
-
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-
-**/
